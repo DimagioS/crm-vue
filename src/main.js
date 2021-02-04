@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import Vuelidate from 'vuelidate'
 import App from './App.vue'
 import './registerServiceWorker'
 import dateFilter from '@/filters/date.filter.js'
@@ -7,6 +8,7 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+Vue.use(Vuelidate)
 Vue.filter('dateFilter', dateFilter) // название , функция
 
 new Vue({
